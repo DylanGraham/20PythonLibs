@@ -1,4 +1,4 @@
-from collections import OrderedDict, defaultdict
+from collections import OrderedDict, defaultdict, namedtuple
 
 ascii_lowercase = ['a', 'b', 'c', 'd', 'e']
 
@@ -10,3 +10,7 @@ print(od)
 
 dd = defaultdict(list)
 print(dd['a'])
+
+nt = namedtuple('nt', 'count enabled colour')
+tup = nt(count=6, enabled=False, colour='Green')
+print(tup)
